@@ -28,7 +28,7 @@ const Header = () => {
     <div>
       <div
         className={
-          "bg-custom-red w-screen px-20 pt-4 flex flex-row justify-between items-center"
+          "bg-custom-red max-w-[1800px] w-screen px-20 pt-4 flex flex-row justify-between items-center"
         }
       >
         {}

@@ -5,7 +5,7 @@ import SecondaryButton from "../Button/SecondaryButton";
 import TextGradient from "../Text/TextGradient";
 const HeroSection = () => {
   return (
-    <div className="w-screen min-h-screen h-full flex flex-col items-center px-20 justify-center bg-gradient-to-b from-custom-red via-black to-black">
+    <div className="w-full  h-full flex flex-col items-center px-20 justify-center bg-gradient-to-b from-custom-red via-black to-black">
       <div className="flex flex-row items-center gap-40 ">
         <div className="w-1/2 flex flex-col gap-8">
           <h1 className="font-semibold text-8xl">All In One Digital Hub</h1>
