@@ -5,10 +5,10 @@ import SecondaryButton from "../Button/SecondaryButton";
 import TextGradient from "../Text/TextGradient";
 const HeroSection = () => {
   return (
-    <div className="w-full  h-full flex flex-col items-center px-20 justify-center bg-gradient-to-b from-custom-red via-black to-black">
-      <div className="flex flex-row items-center gap-40 ">
-        <div className="w-1/2 flex flex-col gap-8">
-          <h1 className="font-semibold text-8xl">All In One Digital Hub</h1>
+    <div className="w-full h-full flex flex-col items-center lg:px-20 px-4 py-10 justify-center gradient">
+      <div className="flex lg:flex-row flex-col items-center lg:gap-40 gap-10 ">
+        <div className="lg:w-1/2 w-full flex flex-col gap-8">
+          <h1 className="font-semibold lg:text-8xl text-7xl">All In One Digital Hub</h1>
           <div className="flex flex-col items-start gap-5">
             <PrimaryButton
               image="/icons/funds-box-line.svg"
@@ -22,7 +22,7 @@ const HeroSection = () => {
           </h4>
         </div>
         <div className="w-1/2  flex justify-center">
-          <Image src={"/hand.svg"} alt="Hand" width={400} height={400} />
+          <Image src={"/hand-image.svg"} className="w-full" alt="Hand" width={600} height={400} />
         </div>
       </div>
       <div className="text-4xl">

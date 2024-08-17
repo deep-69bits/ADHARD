@@ -1,5 +1,6 @@
 import CTASection from "@/components/CTASection";
 import ApproachSection from "@/components/Home/ApproachSection";
+import ClientsSection from "@/components/Home/ClientsSection";
 import HeroSection from "@/components/Home/HeroSection";
 import ProcessSection from "@/components/Home/ProcessSection";
 import ServiceSection from "@/components/Home/ServiceSection";
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection/>
         <ServiceSection/>
         <ProcessSection/>
+        <ClientsSection/>
         <ApproachSection/>
         <CTASection/>
       </Layout>

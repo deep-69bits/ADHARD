@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const ServiceCard = ({ item }: any) => {
   return (
-    <div className="w-full p-10 flex flex-row gap-10 justify-start items-start bg-gradient-to-b from-custom-red via-custom-red to-black">
+    <div className="w-full p-10 flex lg:flex-row flex-col gap-10 justify-start items-start bg-gradient-to-b from-custom-red via-custom-red to-black">
       <Image
         src={item.icon}
         alt={item.icon}
@@ -48,11 +48,11 @@ const Services = [
 ];
 const ServiceSection = () => {
   return (
-    <div className="px-20 py-20">
+    <div className="lg:px-20 px-4 py-20">
       <TextGradient className="text-4xl"> Our services that</TextGradient>
-      <div className="flex items-center justify-start">
+      <div className="lg:flex  items-center justify-start">
         <PrimaryButton
-          className="scale-75"
+          className="lg:scale-75"
           text="Eliminate Challenges, Capture Results"
         />
         <div className="text-7xl font-semibold">Express your ambitions</div>

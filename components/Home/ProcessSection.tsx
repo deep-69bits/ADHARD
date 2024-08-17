@@ -73,12 +73,12 @@ const SwiperButtons = ({ index }: any) => {
 
 const ProcessCard = ({ item }: any) => {
   return (
-    <div className="flex flex-row gap-10 justify-start">
+    <div className="flex lg:flex-row flex-col gap-10 justify-start">
       <div className="text-2xl w-fit font-semibold">0{item.number}</div>
       <div className="w-full">
         <div className="flex w-full justify-between items-center">
           <span className="uppercase text-2xl font-medium">{item.title}</span>
-          <span>
+          <span className="lg:block    hidden">
             <SwiperButtons index={item.number} />
           </span>
         </div>
@@ -87,19 +87,22 @@ const ProcessCard = ({ item }: any) => {
           <div className="text-xl">{item.description}</div>
         </div>
       </div>
+      <span className="lg:hidden  flex items-center justify-center">
+        <SwiperButtons index={item.number} />
+      </span>
     </div>
   );
 };
 
 const ProcessSection = () => {
   return (
-    <div className="px-20 py-10 flex flex-row">
-      <div className="flex w-[45%] flex-col gap-2">
+    <div className="lg:px-20 px-4 py-32 flex lg:gap-0 gap-10 lg:flex-row flex-col">
+      <div className="flex lg:w-[45%] w-full flex-col gap-2">
         <TextGradient className="text-4xl font-semibold">Our</TextGradient>
         <div className="text-6xl font-semibold">Process</div>
         <SecondaryButton text="HIRE US">HIRE US</SecondaryButton>
       </div>
-      <div className="w-[55%]">
+      <div className="lg:w-[55%] w-full">
         <Swiper
           navigation={true}
           modules={[Pagination, A11y]}

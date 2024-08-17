@@ -2,7 +2,7 @@ import React from 'react'
 
 const ApproachSection = () => {
   return (
-    <div className="px-20 py-20">
+    <div className="lg:px-20 px-4 py-20">
       <div className="uppercase text-2xl">Approach to work</div>
       <div className="flex flex-col gap-4 capitalize font-semibold text-6xl mt-10">
         <div>You {`Don't`} Need Something</div>

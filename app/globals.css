@@ -2,28 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   color: white;
 }
 
-#triangle{
+#triangle {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%);
   animation: slide 0.8s forwards;
 }
 @keyframes slide {
-  0%{
+  0% {
     transform: translateX(1000px);
   }
-  100%{
-     transform: translateX(0px);
+  100% {
+    transform: translateX(0px);
   }
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   display: none;
   opacity: 0;
 }
-.swiper-button-next{
+.swiper-button-next {
   opacity: 0;
   display: none;
+}
+
+.image-loop {
+  width: 100%; /* Full width of the container */
+  overflow: hidden; /* Hide the overflow to show only one row */
+  white-space: nowrap; /* Prevent wrapping of images */
+}
+
+.images {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.images img {
+  width: 200px; /* Set a fixed width for each image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between images */
+  display: inline-block; /* Keep images in a single line */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.gradient {
+  background-color: hsla(0, 100%, 50%, 1);
+  background-image: radial-gradient(
+      at 35% 100%,
+      hsla(28, 0%, 0%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 13% 91%, hsla(28, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 87%, hsla(28, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 44% 1%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 78% 8%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 70%, hsla(22, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 43%, hsla(241, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 72% 82%, hsla(343, 0%, 0%, 1) 0px, transparent 50%);
 }
