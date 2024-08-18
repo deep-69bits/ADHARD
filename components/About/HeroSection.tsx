@@ -4,11 +4,11 @@ import SecondaryButton from "@/components/Button/SecondaryButton";
 import TextGradient from "@/components/Text/TextGradient";
 import Image from "next/image";
 
-const FlowerSVG =()=>{
+const FlowerSVG = () => {
   return (
     <svg
       width="106"
-      className="mx-1 animate-spin"
+      className="mx-1 animate-spin lg:w-[106px] lg:h-[106px] w-[50px] h-[50px]"
       height="106"
       viewBox="0 0 106 106"
       fill="none"
@@ -20,7 +20,7 @@ const FlowerSVG =()=>{
       <path d="M91.9534 15L17.0001 89.9533" stroke="white" stroke-width="11" />
     </svg>
   );
-}
+};
 const HeroSection = () => {
   const images = [
     { src: "/partners/20+ Trusted Partners.svg", alt: "Image 1" },
@@ -31,15 +31,21 @@ const HeroSection = () => {
   ];
   const repeatedImages = Array(5).fill(images).flat();
   return (
-    <div className="w-full h-full py-20 flex flex-col  px-20 justify-center bg-gradient-to-b from-custom-red via-black to-black">
+    <div className="w-full h-full py-20 flex flex-col  lg:px-20 px-4 justify-center bg-gradient-to-b from-custom-red via-black to-black">
       <div className="flex flex-row items-center gap-40 ">
         <div className="w-full flex flex-col gap-8">
-          <h1 className="font-semibold text-9xl flex">AB <FlowerSVG/> UT ADHARD</h1>
-          <h4 className="text-2xl w-1/2 leading-normal">
+          <h1 className="font-semibold lg:text-9xl text-6xl  hidden lg:flex">
+            AB <FlowerSVG /> UT ADHARD
+          </h1>
+          <h1 className="font-semibold lg:text-9xl text-7xl lg:hidden flex flex-col">
+            <span className="flex items-center"> AB <FlowerSVG /> UT</span>
+            ADHARD
+          </h1>
+          <h4 className="text-2xl lg:w-1/2 leading-normal">
             A fast-growing digital marketing company empowers your business with
             organic traffic, engagement, and increased sales rates.
           </h4>
-          <div className="flex flex-row items-start gap-5">
+          <div className="flex lg:flex-row flex-col items-start gap-5">
             <PrimaryButton
               image="/icons/funds-box-line.svg"
               text="With 90% Success Rate"
