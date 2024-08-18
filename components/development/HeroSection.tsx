@@ -7,7 +7,9 @@ const HeroSection = () => {
     <div className="w-full h-full gradient py-20 flex flex-col  lg:px-20 px-4 justify-center ">
       <div className="flex flex-row items-center gap-40 ">
         <div className="w-full flex flex-col gap-8">
-          <h1 className="font-semibold lg:text-8xl text-6xl">ADHard Development</h1>
+          <h1 className="font-semibold lg:text-9xl text-6xl">
+            ADHard Development
+          </h1>
           <h4 className="text-2xl lg:w-1/2 leading-normal">
             A fast-growing digital marketing company empowers your business with
             organic traffic, engagement, and increased sales rates.
