@@ -71,3 +71,9 @@
     radial-gradient(at 97% 43%, hsla(241, 0%, 0%, 1) 0px, transparent 50%),
     radial-gradient(at 72% 82%, hsla(343, 0%, 0%, 1) 0px, transparent 50%);
 }
+
+
+.map{
+  min-height: 400px;
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}

@@ -1,23 +1,23 @@
 import CTASection from "@/components/CTASection";
+import DigitalServiceSection from "@/components/digital/DigitalServiceSection";
+import HeroSection from "@/components/digital/HeroSection";
 import ApproachSection from "@/components/ApproachSection";
-import ClientsSection from "@/components/Home/ClientsSection";
-import HeroSection from "@/components/Home/HeroSection";
-import ProcessSection from "@/components/Home/ProcessSection";
 import ServiceSection from "@/components/Home/ServiceSection";
 import Layout from "@/components/Layout/Layout";
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+const page = () => {
   return (
     <main className="bg-black">
       <Layout>
         <HeroSection />
+        <DigitalServiceSection />
         <ServiceSection />
-        <ProcessSection />
-        <ClientsSection />
         <ApproachSection />
         <CTASection />
       </Layout>
     </main>
   );
-}
+};
+
+export default page;

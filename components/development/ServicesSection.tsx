@@ -8,7 +8,7 @@ interface LabelProps {
 
 const Label: React.FC<LabelProps> = ({ children }) => {
   return (
-    <div className="bg-gradient-to-r from-custom-red text-left text-xl font-semibold via-black to-custom-red py-2 px-3 w-[300px]">
+    <div className="bg-gradient-to-r w-full from-custom-red text-left text-xl font-semibold via-black to-custom-red py-2 px-3 lg:w-[300px]">
       {children}
     </div>
   );
@@ -83,38 +83,38 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
   return (
     <div>
-      <div className="text-custom-red uppercase text-xl mt-28">{item.subTitle}</div>
-      <div className="uppercase font-semibold text-8xl pt-2">{item.title}</div>
-      <div className="w-1/3 m-auto text-2xl my-4">{item.description}</div>
-      <div className="flex  flex-row items-center justify-between">
+      <div className="text-custom-red uppercase lg:text-xl text-lg mt-28">{item.subTitle}</div>
+      <div className="uppercase font-semibold lg:text-8xl text-5xl pt-2">{item.title}</div>
+      <div className="lg:w-1/3 w-full m-auto lg:text-2xl text-xl my-4">{item.description}</div>
+      <div className="flex  lg:flex-row flex-col items-center justify-between">
         {item.id % 2 ? (
-          <div className="flex w-1/2 flex-col gap-4">
+          <div className="flex lg:w-1/2 w-full flex-col gap-4">
             {item.labels.map((label, index) => (
               <Label key={index}>{label}</Label>
             ))}
             <SecondaryButton text="HIRE US" />
           </div>
         ) : (
-          <div className="w-1/2">
+          <div className="lg:w-1/2 w-full">
             <Image
               src={item.image1}
               alt=""
               width={200}
               height={200}
-              className="mx-[25%]"
+              className="lg:mx-[25%]"
             />
             <Image
               src={item.image2}
               alt=""
               width={200}
               height={200}
-              className="mx-[50%]"
+              className="lg:mx-[50%] mx-[45%]" 
             />
           </div>
         )}
         <svg
           width="4"
-          className="h-full max-h-96"
+          className="h-full max-h-96 hidden lg:block"
           viewBox="0 0 4 506"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -122,24 +122,24 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
           <path d="M2 0L1.99998 506" stroke="white" strokeWidth="3" />
         </svg>
         {item.id % 2 ? (
-          <div className="w-1/2">
+          <div className="lg:w-1/2 lg:mt-4 mt-4 w-full">
             <Image
               src={item.image1}
               alt=""
               width={200}
               height={200}
-              className="mx-[25%]"
+              className="lg:mx-[25%]"
             />
             <Image
               src={item.image2}
               alt=""
               width={200}
               height={200}
-              className="mx-[50%]"
+              className="mx-[45%]"
             />
           </div>
         ) : (
-          <div className="flex w-1/2 flex-col items-end gap-4">
+          <div className="flex lg:w-1/2 w-full flex-col lg:items-end item gap-4 lg:mt-0 mt-4">
             {item.labels.map((label, index) => (
               <Label key={index}>{label}</Label>
             ))}
@@ -153,7 +153,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
 
 const ServicesSection: React.FC = () => {
   return (
-    <div className="px-20 py-10 text-center">
+    <div className="lg:px-20 px-4 py-10 text-center">
       {ServiceData.map((item, index) => (
         <ServiceCard key={index} item={item} />
       ))}

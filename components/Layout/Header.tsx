@@ -22,8 +22,8 @@ const Header = () => {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Development", link: "/development" },
-    { name: "Digital", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Digital", link: "/digital" },
+    { name: "Contact", link: "/contact" },
   ];
   return (
     <div>
