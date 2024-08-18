@@ -41,7 +41,7 @@ const Header = () => {
           className="lg:block hidden"
         />
         <Image
-          src={"/Header_Logo.svg"}
+          src={"/Header_Logo.png"}
           alt="ADHARD_LOGO"
           height={100}
           width={100}
