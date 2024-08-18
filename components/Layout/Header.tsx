@@ -40,13 +40,16 @@ const Header = () => {
           width={100}
           className="lg:block hidden"
         />
-        <Image
-          src={"/Footer_Logo.svg"}
-          alt="ADHARD_LOGO"
-          height={100}
-          width={100}
-          className="lg:hidden w-full block"
-        />
+        <div>
+          <Image
+            src={"/Header_logo2.svg"}
+            alt="ADHARD_LOGO"
+            height={100}
+            width={100}
+            className="lg:hidden w-full block"
+          />
+          <hr className="mt-2 h-1  lg:hidden w-full block" />
+        </div>
         <div className="flex w-full lg:w-fit justify-between items-center gap-4">
           <ContactButton />
           <Image
