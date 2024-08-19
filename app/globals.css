@@ -56,24 +56,36 @@
 }
 
 .gradient {
-  background-color: hsla(0, 100%, 50%, 1);
+  background-color: hsla(357, 80%, 48%, 1);
   background-image: radial-gradient(
-      at 35% 100%,
-      hsla(28, 0%, 0%, 1) 0px,
+      at 95% 46%,
+      hsla(355, 0%, 0%, 1) 0px,
       transparent 50%
     ),
-    radial-gradient(at 13% 91%, hsla(28, 0%, 0%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 87%, hsla(28, 0%, 0%, 1) 0px, transparent 50%),
-    radial-gradient(at 44% 1%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
-    radial-gradient(at 78% 8%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 70%, hsla(22, 0%, 0%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 43%, hsla(241, 0%, 0%, 1) 0px, transparent 50%),
-    radial-gradient(at 72% 82%, hsla(343, 0%, 0%, 1) 0px, transparent 50%);
+    radial-gradient(at 6% 51%, hsla(358, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 94% 64%, hsla(358, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 95% 88%, hsla(359, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 31% 90%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 8% 86%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 71% 88%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 40% 20%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(357, 80%, 48%, 1) 0px, transparent 50%);
 }
-
-
-.map{
+.btn_gradient {
+  background-color: hsla(357, 80%, 48%, 1);
+  background-image: radial-gradient(
+      at 80% 20%,
+      hsla(357, 80%, 48%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 55% 23%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 18% 23%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 86% 91%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 65% 77%, hsla(355, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(357, 80%, 48%, 1) 0px, transparent 50%);
+}
+.map {
   min-height: 400px;
   filter: grayscale(100%) invert(92%) contrast(83%);
 }

@@ -8,7 +8,7 @@ interface LabelProps {
 
 const Label: React.FC<LabelProps> = ({ children }) => {
   return (
-    <div className="bg-gradient-to-r w-full from-custom-red text-left text-xl font-semibold via-black to-custom-red py-2 px-3 lg:w-[300px]">
+    <div className=" w-full  text-left text-xl font-semibold btn_gradient py-2 px-3 lg:w-[300px]">
       {children}
     </div>
   );

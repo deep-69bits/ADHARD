@@ -55,7 +55,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="mt-10 w-full">
-        <TextGradient className="text-4xl font-semibold">Our</TextGradient>
+        <TextGradient className="text-4xl translate-y-10 font-semibold">Our</TextGradient>
         <div className="image-loop">
           <div className="images flex gap-10">
             {repeatedImages.map((image, index) => (

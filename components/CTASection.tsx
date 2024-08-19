@@ -3,7 +3,7 @@ import Script from "next/script";
 import Image from "next/image";
 const CTASection = () => {
   return (
-    <div className="flex flex-col items-center text-center lg:px-20 px-4 py-20 justify-center bg-gradient-to-b from-custom-red via-black to-black">
+    <div className="flex flex-col items-center text-center lg:px-20 px-4 py-20 justify-center gradient">
       <Script
         src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
         type="module"

@@ -8,7 +8,10 @@ const AuthorSection = () => {
     <div className="lg:px-20 gradient px-4 flex lg:flex-row flex-col w-full lg:gap-40 gap-10  pt-10">
       <div className="lg:w-1/2 w-full flex flex-col gap-10">
         <div>
-          <TextGradient className="font-semibold text-4xl">
+          <TextGradient
+            className="font-semibold text-4xl"
+            text=" The aura behind"
+          >
             The aura behind
           </TextGradient>
           <div className="text-4xl font-semibold">Mr. Vivek Jain</div>

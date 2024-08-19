@@ -1,19 +1,64 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState, useRef } from "react";
+import { motion } from "framer-motion";
 
 const ApproachSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  const textVariants = (delay:number) => ({
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 1, delay },
+    },
+  });
+
   return (
-    <div className="lg:px-20 px-4 py-20">
+    <motion.div
+      ref={sectionRef}
+      className="lg:px-20 px-4 py-20"
+      initial="hidden"
+      animate={isVisible ? "visible" : "hidden"}
+    >
       <div className="uppercase text-2xl">Approach to work</div>
       <div className="flex flex-col gap-4 capitalize font-semibold text-6xl mt-10">
-        <div>You {`Don't`} Need Something</div>
-        <div>ordinary.</div>
-        <div>You Need</div>
-        <div className="text-custom-red flex ">
-          ADHARD{" "}
+        <motion.div variants={textVariants(0.5)}>
+          You {`Don't`} Need Something
+        </motion.div>
+        <motion.div variants={textVariants(0.8)}>ordinary.</motion.div>
+        <motion.div variants={textVariants(1.1)}>You Need</motion.div>
+        <motion.div
+          className="text-custom-red flex"
+          variants={textVariants(1.4)}
+        >
+          ADHARD
           <svg
             width="90"
             height="60"
-            className='translate-x-[-20px] translate-y-[-10px]'
+            className="translate-x-[-20px] translate-y-[-10px]"
             viewBox="0 0 90 128"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -31,10 +76,11 @@ const ApproachSection = () => {
               fill="white"
             />
           </svg>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
-}
+};
 
-export default ApproachSection
+export default ApproachSection;
+

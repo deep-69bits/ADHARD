@@ -29,7 +29,7 @@ const Header = () => {
     <div>
       <div
         className={
-          "bg-custom-red max-w-[1700px] w-screen lg:px-20 px-4 pt-4 flex lg:flex-row gap-4 flex-col justify-between items-center"
+          "bg-custom-red max-w-[1700px] m-auto w-screen lg:px-20 px-4 pt-4 flex lg:flex-row gap-4 flex-col justify-between items-center"
         }
       >
         {}
@@ -66,7 +66,7 @@ const Header = () => {
       </div>
 
       {open ? (
-        <div className="w-full h-screen  top-0 bg-black  bg-opacity-75 z-50 absolute flex justify-end">
+        <div className="w-full h-screen  top-0 bg-black max-w-[1700px] bg-opacity-75 z-50 absolute  flex justify-end">
           <div
             id="triangle"
             className="h-screen  w-[55%] py-10 lg:flex hidden flex-col gap-10 items-end px-20 bg-gradient-to-b from-custom-red via-black to-black "
@@ -118,7 +118,7 @@ const Header = () => {
               onClick={() => {
                 setOpen(!open);
               }}
-              className="cursor-pointer bg-[rgba(35, 35, 35, 0.70)] text-xl items-center flex text-center justify-center  gap-4 px-6 rounded-md py-2 bg-black bg-opacity-40 font-medium w-full"
+              className="cursor-pointer max-w-[1700px] bg-[rgba(35, 35, 35, 0.70)] text-xl items-center flex text-center justify-center  gap-4 px-6 rounded-md py-2 bg-black bg-opacity-40 font-medium w-full"
             >
               Close
               <Image

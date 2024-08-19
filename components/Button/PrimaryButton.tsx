@@ -6,7 +6,7 @@ const PrimaryButton = ({ image, text, className }: any) => {
   return (
     <div
       className={classNames(
-        "inline-flex px-9 cursor-pointer py-3 justify-center rounded-sm bg-gradient-to-r from-custom-red via-black to-custom-red items-center gap-2",
+        "inline-flex px-9 cursor-pointer py-3 justify-center rounded-sm btn_gradient items-center gap-2",
         className
       )}
     >
