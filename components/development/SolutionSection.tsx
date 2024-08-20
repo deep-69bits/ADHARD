@@ -96,13 +96,14 @@ const ProcessCard = ({ item }: any) => {
 
 const ProcessSection = () => {
   return (
-    <div className="lg:px-20 px-4 py-32 flex lg:gap-0 gap-10 lg:flex-row flex-col">
-      <div className="flex lg:w-[45%] w-full flex-col gap-2">
-        <TextGradient className="text-4xl font-semibold">Our</TextGradient>
-        <div className="text-6xl font-semibold">Process</div>
-        <SecondaryButton  link="/contact" text="HIRE US"/>
+    <div className="lg:px-20 px-4 py-32 flex gradient gap-20 flex-col">
+      <div className="flex lg:w-[45%] w-full flex-col gap-10">
+        <div className="uppercase text-xl">Our Solution Proccess</div>
+        <div className="font-semibold text-6xl leading-[4.5rem]">
+          Development, growth and achievements inspire us to do quality work.
+        </div>
       </div>
-      <div className="lg:w-[55%] w-full">
+      <div className="w-full">
         <Swiper
           navigation={true}
           modules={[Pagination, A11y]}

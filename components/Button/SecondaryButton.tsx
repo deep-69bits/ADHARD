@@ -1,9 +1,21 @@
+import Link from "next/link";
 import React from "react";
-import Image from "next/image";
-const SecondaryButton = ({ image, text }: any) => {
+
+interface SecondaryButtonProps {
+  text: string;
+  link: string;
+}
+
+const SecondaryButton: React.FC<SecondaryButtonProps> = ({
+  text,
+  link,
+}) => {
   return (
-    <div className="inline-flex w-fit group px-11  cursor-pointer bg-white rounded-sm  transition-all duration-500 hover:bg-gradient-to-r  from-custom-red via-black to-custom-red  py-3 justify-center items-center gap-3">
-      <span className="text-xl group-hover:text-white text-custom-red  font-extrabold leading-normal">
+    <Link
+      href={link}
+      className="inline-flex w-fit group px-11 cursor-pointer bg-white rounded-sm transition-all duration-500 hover:bg-gradient-to-r from-custom-red via-black to-custom-red py-3 justify-center items-center gap-3"
+    >
+      <span className="text-xl group-hover:text-white text-custom-red font-extrabold leading-normal">
         {text}
       </span>
       <svg
@@ -20,7 +32,7 @@ const SecondaryButton = ({ image, text }: any) => {
           className="transition-all duration-300 group-hover:fill-white"
         />
       </svg>
-    </div>
+    </Link>
   );
 };
 

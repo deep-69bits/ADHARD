@@ -3,7 +3,7 @@ import SecondaryButton from "../Button/SecondaryButton";
 
 const ContactForm = () => {
   return (
-    <div className="px-4 lg:px-20 py-20 grid grid-flow-row lg:grid-cols-2 grid-cols-1 gap-5">
+    <div id="contact-form" className="px-4 lg:px-20 py-20 grid grid-flow-row lg:grid-cols-2 grid-cols-1 gap-5">
       <div>
         Do you have a project in mind? <br /> Contact AdHard and start working
         to make it <br /> real and beyond expectations. It is just as <br />{" "}
@@ -36,7 +36,7 @@ const ContactForm = () => {
           placeholder="Message"
         />
         <div className="mt-5">
-          <SecondaryButton text="SEND" />
+          <SecondaryButton link="/contact" text="SEND" />
         </div>
       </div>
     </div>

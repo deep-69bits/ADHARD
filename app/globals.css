@@ -89,3 +89,58 @@
   min-height: 400px;
   filter: grayscale(100%) invert(92%) contrast(83%);
 }
+
+.cta-gradient {
+  background-color: hsla(357, 80%, 48%, 1);
+  background-image: radial-gradient(
+      at 4% 17%,
+      hsla(21, 0%, 0%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 42% 0%, hsla(21, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 9% 45%, hsla(20, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 73% 0%, hsla(23, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 98% 42%, hsla(23, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 96% 6%, hsla(23, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 5%, hsla(25, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 65% 100%, hsla(343, 0%, 0%, 1) 0px, transparent 50%);
+}
+
+/* Define the keyframes for the rotate animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to an element */
+.rotate-element {
+  animation: rotate 5s linear infinite;
+}
+
+.author-gradient {
+  background-color: hsla(357, 80%, 48%, 1);
+  background-image: radial-gradient(
+      at 75% 96%,
+      hsla(240, 0%, 0%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 38%, hsla(342, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 66% 76%, hsla(13, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 27% 5%, hsla(240, 0%, 1%, 1) 0px, transparent 50%),
+    radial-gradient(at 8% 13%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 34% 89%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 7% 94%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 62%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 99% 38%, hsla(4, 91%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 19% 50%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 43% 23%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 0%, 0%, 1) 0px, transparent 50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}

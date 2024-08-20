@@ -16,7 +16,10 @@ const HeroSection = () => {
               image="/icons/funds-box-line.svg"
               text="With 90% Success Rate"
             />
-            <SecondaryButton image="/icons/funds-box-line.svg" text="HIRE US" />
+            <SecondaryButton
+              link="/contact"
+              text="HIRE US"
+            />
           </div>
         </div>
       </div>

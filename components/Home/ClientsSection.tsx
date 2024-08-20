@@ -89,7 +89,7 @@ const ClientCard = ({ item }: any) => {
 
 const ClientsSection = () => {
   return (
-    <div className="flex lg:flex-row flex-col items-start  w-full lg:px-20 px-4 pt-20 justify-start bg-gradient-to-b from-black via-black to-custom-red">
+    <div className="flex lg:flex-row flex-col items-start  w-full lg:px-20 px-4 pt-20 justify-start cta-gradient">
       <div className="w-[350px] ">
         <TextGradient className="text-5xl  font-semibold">
           Our clients

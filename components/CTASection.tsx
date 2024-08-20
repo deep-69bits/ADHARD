@@ -1,13 +1,8 @@
 import React from "react";
-import Script from "next/script";
 import Image from "next/image";
 const CTASection = () => {
   return (
     <div className="flex flex-col items-center text-center lg:px-20 px-4 py-20 justify-center gradient">
-      <Script
-        src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-        type="module"
-      ></Script>
       <Image src={"/Logo.svg"} alt="ADHARD_LOGO" height={100} width={100} />
 
       <div className="pt-4 uppercase text-2xl">
@@ -27,7 +22,8 @@ const CTASection = () => {
         START
       </div>
       <div className="text-2xl">
-        We will be happy to discuss your project <br /> and your business objectives
+        We will be happy to discuss your project <br /> and your business
+        objectives
       </div>
     </div>
   );

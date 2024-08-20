@@ -83,16 +83,22 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
   return (
     <div>
-      <div className="text-custom-red uppercase lg:text-xl text-lg mt-28">{item.subTitle}</div>
-      <div className="uppercase font-semibold lg:text-8xl text-5xl pt-2">{item.title}</div>
-      <div className="lg:w-1/3 w-full m-auto lg:text-2xl text-xl my-4">{item.description}</div>
+      <div className="text-custom-red uppercase lg:text-xl text-lg mt-28">
+        {item.subTitle}
+      </div>
+      <div className="uppercase font-semibold lg:text-8xl text-5xl pt-2">
+        {item.title}
+      </div>
+      <div className="lg:w-1/3 w-full m-auto lg:text-2xl text-xl my-4">
+        {item.description}
+      </div>
       <div className="flex  lg:flex-row flex-col items-center justify-between">
         {item.id % 2 ? (
           <div className="flex lg:w-1/2 w-full flex-col gap-4">
             {item.labels.map((label, index) => (
               <Label key={index}>{label}</Label>
             ))}
-            <SecondaryButton text="HIRE US" />
+            <SecondaryButton link="/contact" text="HIRE US" />
           </div>
         ) : (
           <div className="lg:w-1/2 w-full">
@@ -108,7 +114,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
               alt=""
               width={200}
               height={200}
-              className="lg:mx-[50%] mx-[45%]" 
+              className="lg:mx-[50%] mx-[45%]"
             />
           </div>
         )}
@@ -143,7 +149,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
             {item.labels.map((label, index) => (
               <Label key={index}>{label}</Label>
             ))}
-            <SecondaryButton text="HIRE US" />
+            <SecondaryButton link="/contact" text="HIRE US" />
           </div>
         )}
       </div>

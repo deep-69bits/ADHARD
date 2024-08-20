@@ -8,7 +8,7 @@ const FlowerSVG = () => {
   return (
     <svg
       width="106"
-      className="mx-1 animate-spin lg:w-[106px] lg:h-[106px] w-[50px] h-[50px]"
+      className="mx-1 rotate-element lg:w-[106px] lg:h-[106px] w-[50px] h-[50px]"
       height="106"
       viewBox="0 0 106 106"
       fill="none"
@@ -23,7 +23,6 @@ const FlowerSVG = () => {
 };
 const HeroSection = () => {
   const images = [
-    { src: "/partners/20+ Trusted Partners.svg", alt: "Image 1" },
     { src: "/partners/l11.svg", alt: "Image 2" },
     { src: "/partners/l1 2.svg", alt: "Image 3" },
     { src: "/partners/l1 3.svg", alt: "Image 4" },
@@ -38,7 +37,10 @@ const HeroSection = () => {
             AB <FlowerSVG /> UT ADHARD
           </h1>
           <h1 className="font-semibold lg:text-9xl text-7xl lg:hidden flex flex-col">
-            <span className="flex items-center"> AB <FlowerSVG /> UT</span>
+            <span className="flex items-center">
+              {" "}
+              AB <FlowerSVG /> UT
+            </span>
             ADHARD
           </h1>
           <h4 className="text-2xl lg:w-1/2 leading-normal">
@@ -50,24 +52,34 @@ const HeroSection = () => {
               image="/icons/funds-box-line.svg"
               text="With 90% Success Rate"
             />
-            <SecondaryButton image="/icons/funds-box-line.svg" text="HIRE US" />
+            <SecondaryButton
+              link="/contact"
+              text="HIRE US"
+            />
           </div>
         </div>
       </div>
       <div className="mt-10 w-full">
-        <TextGradient className="text-4xl translate-y-10 font-semibold">Our</TextGradient>
-        <div className="image-loop">
-          <div className="images flex gap-10">
-            {repeatedImages.map((image, index) => (
-              <Image
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                className="mx-10"
-                width={200}
-                height={200}
-              />
-            ))}
+        <TextGradient className="text-4xl translate-y-0 font-semibold">
+          Our
+        </TextGradient>
+        <div className="flex flex-col lg:flex-row  items-center">
+          <div className="lg:w-[400px] gap-4 text-3xl font-semibold">
+            20+ Trusted Partners
+          </div>
+          <div className="image-loop">
+            <div className="images flex gap-10">
+              {repeatedImages.map((image, index) => (
+                <Image
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="mx-10"
+                  width={200}
+                  height={200}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

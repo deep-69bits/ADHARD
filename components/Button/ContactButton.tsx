@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Link from 'next/link';
 const ContactButton = () => {
   return (
-    <div className="cursor-pointer bg-[rgba(35, 35, 35, 0.70)] flex  gap-4 px-6 rounded-md py-2 bg-black bg-opacity-40 font-medium">
+    <Link
+      href={"/contact#contact-form"}
+      className="cursor-pointer bg-[rgba(35, 35, 35, 0.70)] flex  gap-4 px-6 rounded-md py-2 bg-black bg-opacity-40 font-medium"
+    >
       <svg
         width="24"
         height="24"
@@ -16,7 +19,7 @@ const ContactButton = () => {
         />
       </svg>
       Schedule a Call
-    </div>
+    </Link>
   );
 }
 
