@@ -29,7 +29,7 @@ const Header = () => {
     <div>
       <div
         className={
-          "bg-custom-red max-w-[1700px] m-auto w-screen lg:px-20 px-4 pt-4 flex lg:flex-row gap-4 flex-col justify-between items-center"
+          "bg-[#F10000] max-w-[1700px] m-auto w-screen lg:px-20 px-4 pt-4 flex lg:flex-row gap-4 flex-col justify-between items-center"
         }
       >
         {}

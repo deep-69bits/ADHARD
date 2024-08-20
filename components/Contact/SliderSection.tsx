@@ -15,10 +15,10 @@ const SliderSection = () => {
   ];
   const repeatedImages = Array(2).fill(images).flat();
   return (
-    <div className="my-5 bg-gradient-to-b from-custom-red via-black to-black">
+    <div className="my-5 bg-gradient-to-b from-custom-red via-black to-custom-red">
       <div className="mt-10 w-full">
         <div className="image-loop">
-          <div className="images flex gap-10">
+          <div className="images flex gap-10 py-8">
             {repeatedImages.map((image, index) => (
               <SayHi key={index} />
             ))}

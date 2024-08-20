@@ -34,7 +34,7 @@ const RegionalSVG = () => {
 };
 const LocationSection = () => {
   return (
-    <div className="gap-10  bg-gradient-to-b from-custom-red via-black to-black grid grid-flow-row lg:grid-cols-2 grid-cols-1">
+    <div className="gap-10 map-gradient grid grid-flow-row lg:grid-cols-2 grid-cols-1 items-center">
       <div className="lg:px-20 px-4 flex pt-20 gap-10 lg:flex-row flex-col">
         <div>
           <HeadOfficeSVG />

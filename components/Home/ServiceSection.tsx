@@ -5,15 +5,10 @@ import Image from "next/image";
 
 const ServiceCard = ({ item }: any) => {
   return (
-    <div className="w-full p-10 flex lg:flex-row flex-col gap-10 justify-start items-start bg-gradient-to-b from-custom-red via-custom-red to-black">
-      <Image
-        src={item.icon}
-        alt={item.icon}
-        width={70}
-        height={50}
-      />
+    <div className="w-full p-10 flex lg:flex-row flex-col gap-10 justify-start items-start bg-gradient-to-b card-gradient">
+      <Image src={item.icon} alt={item.icon} width={70} height={50} />
       <div>
-        <h6 className="font-bold text-2xl mb-2">{item.title}</h6>
+        <h6 className="font-bold text-2xl mb-2 uppercase">{item.title}</h6>
         <p className="text-xl font-light">{item.description} </p>
       </div>
     </div>
@@ -44,6 +39,24 @@ const Services = [
     description:
       "We draw powerful insights from virtually non-existent data to spruce up your strategies.",
     icon: "/icons/ana-1.svg",
+  },
+  {
+    title: "Online Public Relations",
+    description:
+      "It encompasses digital communication strategies to build and maintain.",
+    icon: "/icons/download 1.svg",
+  },
+  {
+    title: "Affiliate Marketing",
+    description:
+      "Strategy that involves creating and sharing content on social a websites media platforms.",
+    icon: "/icons/download 2.svg",
+  },
+  {
+    title: "Indian celebrity management",
+    description:
+      "Managing Indian celebrities' brand deals, public appearances, and media presence to maintain a strong public image.",
+    icon: "/icons/human-graphics-svgrepo-com.svg",
   },
 ];
 

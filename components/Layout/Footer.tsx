@@ -26,24 +26,30 @@ const Footer = () => {
       </svg>
       <div className="flex lg:flex-row flex-col gap-4 justify-between lg:items-center">
         <div className="flex lg:flex-row flex-col lg:items-center items-start gap-4">
-          <Link className="underline text-xl uppercase" href={"/about"}>
+          <Link className="hover:underline text-xl uppercase" href={"/about"}>
             About
           </Link>
-          <Link className="underline text-xl uppercase" href={"/contact"}>
+          <Link className="hover:underline text-xl uppercase" href={"/contact"}>
             Contact Us
           </Link>
-          <Link className="underline text-xl uppercase" href={"/digital "}>
+          <Link
+            className="hover:underline text-xl uppercase"
+            href={"/digital "}
+          >
             Adhard Digital Marketing
           </Link>
-          <Link className="underline text-xl uppercase" href={"/development"}>
+          <Link
+            className="hover:underline text-xl uppercase"
+            href={"/development"}
+          >
             Adhard Development
           </Link>
         </div>
         <div className="flex lg:flex-row flex-col lg:items-center items-start gap-4">
-          <Link className="underline text-xl uppercase" href={"/"}>
+          <Link className="hover:underline text-xl uppercase" href={"/"}>
             Our Business Policy
           </Link>
-          <Link className="underline text-xl uppercase" href={"/"}>
+          <Link className="hover:underline text-xl uppercase" href={"/"}>
             Terms & Condition
           </Link>
         </div>
@@ -52,7 +58,9 @@ const Footer = () => {
       <div className="flex lg:flex-row flex-col gap-5  mt-10 lg:items-center items-start justify-between">
         <div className="flex flex-col gap-4">
           <span className="uppercase">made with ❤️ in india</span>
-          <span className="uppercase">info@adhard.com</span>
+          <Link href="mailto:info@adhard.com" className="uppercase">
+            info@adhard.com
+          </Link>
           <span className="uppercase">+971 55 631 0801</span>
 
           <div className="flex lg:flex-col flex-row  lg:mt-4 gap-2">

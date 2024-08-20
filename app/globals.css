@@ -56,7 +56,7 @@
 }
 
 .gradient {
-  background-color: hsla(357, 80%, 48%, 1);
+  background-color: #f10000;
   background-image: radial-gradient(
       at 95% 46%,
       hsla(355, 0%, 0%, 1) 0px,
@@ -68,30 +68,26 @@
     radial-gradient(at 31% 90%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
     radial-gradient(at 8% 86%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
     radial-gradient(at 71% 88%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
-    radial-gradient(at 40% 20%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(357, 80%, 48%, 1) 0px, transparent 50%);
+    radial-gradient(at 40% 20%, #f10000 0px, transparent 50%),
+    radial-gradient(at 0% 0%, #f10000 0px, transparent 50%);
 }
 .btn_gradient {
-  background-color: hsla(357, 80%, 48%, 1);
-  background-image: radial-gradient(
-      at 80% 20%,
-      hsla(357, 80%, 48%, 1) 0px,
-      transparent 50%
-    ),
+  background-color: #f10000;
+  background-image: radial-gradient(at 80% 20%, #f10000 0px, transparent 50%),
     radial-gradient(at 55% 23%, hsla(357, 0%, 0%, 1) 0px, transparent 50%),
-    radial-gradient(at 18% 23%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
-    radial-gradient(at 86% 91%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 18% 23%, #f10000 0px, transparent 50%),
+    radial-gradient(at 86% 91%, #f10000 0px, transparent 50%),
     radial-gradient(at 65% 77%, hsla(355, 0%, 0%, 1) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, hsla(357, 80%, 48%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(357, 80%, 48%, 1) 0px, transparent 50%);
+    radial-gradient(at 100% 100%, #f10000 0px, transparent 50%),
+    radial-gradient(at 0% 0%, #f10000 0px, transparent 50%);
 }
 .map {
-  min-height: 400px;
+  min-height: 500px;
   filter: grayscale(100%) invert(92%) contrast(83%);
 }
 
 .cta-gradient {
-  background-color: hsla(357, 80%, 48%, 1);
+  background-color: #f10000;
   background-image: radial-gradient(
       at 4% 17%,
       hsla(21, 0%, 0%, 1) 0px,
@@ -122,7 +118,7 @@
 }
 
 .author-gradient {
-  background-color: hsla(357, 80%, 48%, 1);
+  background-color: #f10000;
   background-image: radial-gradient(
       at 75% 96%,
       hsla(240, 0%, 0%, 1) 0px,
@@ -143,4 +139,34 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.card-gradient {
+  background-color: hsla(0, 100%, 47%, 1);
+  background-image: radial-gradient(
+      at 90% 88%,
+      hsla(240, 0%, 0%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 22% 21%, hsla(0, 100%, 47%, 1) 0px, transparent 50%),
+    radial-gradient(at 67% 97%, hsla(0, 100%, 47%, 1) 0px, transparent 50%),
+    radial-gradient(at 8% 26%, hsla(0, 100%, 47%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 40%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 96% 95%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 6% 91%, hsla(341, 0%, 0%, 1) 0px, transparent 50%);
+}
+
+.map-gradient {
+  background-color: hsla(261, 0%, 0%, 1);
+  background-image: radial-gradient(
+      at 91% 77%,
+      hsla(240, 0%, 0%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 51% 30%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 50% 2%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 92% 50%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 18% 47%, hsla(240, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(0, 100%, 47%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(0, 100%, 47%, 1) 0px, transparent 50%);
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const DigitalServiceCard = ({ item }: any) => {
   return (
-    <div className="w-full p-10 flex  flex-col gap-10 justify-start items-start bg-gradient-to-b from-custom-red via-custom-red to-black">
+    <div className="w-full p-10 flex  flex-col gap-10 justify-start items-start bg-gradient-to-b card-gradient">
       <Image src={item.icon} alt={item.icon} width={70} height={50} />
       <div>
         <h6 className="font-bold text-2xl mb-2">{item.title}</h6>

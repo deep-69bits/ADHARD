@@ -1,18 +1,13 @@
+"use client";
 import React from "react";
 import SecondaryButton from "../Button/SecondaryButton";
 import Image from "next/image";
+import { Parallax } from "react-scroll-parallax";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 interface LabelProps {
   children: React.ReactNode;
 }
-
-const Label: React.FC<LabelProps> = ({ children }) => {
-  return (
-    <div className=" w-full  text-left text-xl font-semibold btn_gradient py-2 px-3 lg:w-[300px]">
-      {children}
-    </div>
-  );
-};
 
 interface ServiceItem {
   id: number;
@@ -80,6 +75,32 @@ interface ServiceCardProps {
   item: ServiceItem;
 }
 
+interface LabelProps {
+  children: React.ReactNode;
+}
+
+const Label: React.FC<LabelProps> = ({ children }) => {
+  return (
+    <div className="w-full text-left text-xl font-semibold btn_gradient py-2 px-3 lg:w-[300px]">
+      {children}
+    </div>
+  );
+};
+
+interface ServiceItem {
+  id: number;
+  title: string;
+  subTitle: string;
+  description: string;
+  labels: string[];
+  image1: string;
+  image2: string;
+}
+
+interface ServiceCardProps {
+  item: ServiceItem;
+}
+
 const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
   return (
     <div>
@@ -92,7 +113,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
       <div className="lg:w-1/3 w-full m-auto lg:text-2xl text-xl my-4">
         {item.description}
       </div>
-      <div className="flex  lg:flex-row flex-col items-center justify-between">
+      <div className="flex lg:flex-row flex-col items-center justify-between">
         {item.id % 2 ? (
           <div className="flex lg:w-1/2 w-full flex-col gap-4">
             {item.labels.map((label, index) => (
@@ -102,20 +123,24 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
           </div>
         ) : (
           <div className="lg:w-1/2 w-full">
-            <Image
-              src={item.image1}
-              alt=""
-              width={200}
-              height={200}
-              className="lg:mx-[25%]"
-            />
-            <Image
-              src={item.image2}
-              alt=""
-              width={200}
-              height={200}
-              className="lg:mx-[50%] mx-[45%]"
-            />
+            <Parallax speed={-2}>
+              <Image
+                src={item.image1}
+                alt=""
+                width={200}
+                height={200}
+                className="lg:mx-[25%]"
+              />
+            </Parallax>
+            <Parallax speed={-1}>
+              <Image
+                src={item.image2}
+                alt=""
+                width={200}
+                height={200}
+                className="lg:mx-[50%] mx-[45%]"
+              />
+            </Parallax>
           </div>
         )}
         <svg
@@ -129,20 +154,24 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
         </svg>
         {item.id % 2 ? (
           <div className="lg:w-1/2 lg:mt-4 mt-4 w-full">
-            <Image
-              src={item.image1}
-              alt=""
-              width={200}
-              height={200}
-              className="lg:mx-[25%]"
-            />
-            <Image
-              src={item.image2}
-              alt=""
-              width={200}
-              height={200}
-              className="mx-[45%]"
-            />
+            <Parallax speed={-2}>
+              <Image
+                src={item.image1}
+                alt=""
+                width={200}
+                height={200}
+                className="lg:mx-[25%]"
+              />
+            </Parallax>
+            <Parallax speed={-1}>
+              <Image
+                src={item.image2}
+                alt=""
+                width={200}
+                height={200}
+                className="mx-[45%]"
+              />
+            </Parallax>
           </div>
         ) : (
           <div className="flex lg:w-1/2 w-full flex-col lg:items-end item gap-4 lg:mt-0 mt-4">
@@ -161,7 +190,9 @@ const ServicesSection: React.FC = () => {
   return (
     <div className="lg:px-20 px-4 py-10 text-center">
       {ServiceData.map((item, index) => (
-        <ServiceCard key={index} item={item} />
+        <ParallaxProvider key={index}>
+          <ServiceCard  item={item} />
+        </ParallaxProvider>
       ))}
     </div>
   );
