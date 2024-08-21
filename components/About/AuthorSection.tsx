@@ -2,6 +2,7 @@ import React from "react";
 import TextGradient from "../Text/TextGradient";
 import SecondaryButton from "../Button/SecondaryButton";
 import Image from "next/image";
+import Link from "next/link";
 
 const SVG1 = () => {
   return (
@@ -11,7 +12,7 @@ const SVG1 = () => {
       viewBox="0 0 119 155"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute translate-y-72 -translate-x-28"
+      className="absolute translate-y-72 -translate-x-28 lg:block hidden"
     >
       <path
         d="M67.9031 154.654C73.298 143.946 79.3468 133.728 85.5591 123.674C91.7714 113.538 98.3107 103.647 105.013 93.9203C107.575 90.1602 110.218 86.4274 112.942 82.7218C113.215 82.2313 113.542 81.7681 113.923 81.3322L115.967 84.847L118.01 88.4436C117.738 88.9341 117.438 89.3973 117.111 89.8332C115.204 92.6669 113.297 95.5006 111.389 98.3343C104.632 108.034 97.684 117.625 90.5453 127.107C83.2704 136.507 75.9137 145.744 67.9031 154.654Z"
@@ -28,12 +29,12 @@ const SVG1 = () => {
     </svg>
   );
 };
-const SVG2=()=>{
+const SVG2 = () => {
   return (
     <svg
       width="119"
       height="115"
-      className="absolute translate-y-[-400px] translate-x-80"
+      className="absolute translate-y-[-400px] translate-x-80 lg:block hidden"
       viewBox="0 0 119 155"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +53,7 @@ const SVG2=()=>{
       />
     </svg>
   );
-}
+};
 const AuthorSection = () => {
   return (
     <div className="lg:px-20 author-gradient px-4 flex lg:flex-row flex-col w-full lg:gap-48 gap-10  pt-10">
@@ -75,7 +76,28 @@ const AuthorSection = () => {
           cloud.
         </div>
         <div className="hidden lg:block">
-          <SecondaryButton link="/contact" text="SAY Hii to VIVEK" />
+          <Link
+            href={"/contact"}
+            className="inline-flex lg:w-fit w-full group px-11 cursor-pointer bg-white rounded-sm transition-all duration-500 hover:bg-gradient-to-r from-custom-red via-black to-custom-red py-3 justify-center items-center gap-3"
+          >
+            <span className="text-xl group-hover:text-white text-custom-red font-extrabold leading-normal">
+              SAY Hii to VIVEK
+            </span>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="group-hover:translate-x-2 transition-all duration-300 group-hover:fill-white"
+            >
+              <path
+                d="M12 13H4V11H12V4L20 12L12 20V13Z"
+                fill="#E1181F"
+                className="transition-all duration-300 group-hover:fill-white"
+              />
+            </svg>
+          </Link>
         </div>
       </div>
       <div className="lg:w-1/2 w-full">
@@ -87,13 +109,31 @@ const AuthorSection = () => {
             width={420}
             height={400}
           />
-          <SVG2/>
+          <SVG2 />
         </div>
         <div className="lg:hidden block">
-          <SecondaryButton
-            link="/contact"
-            text="SAY Hii to VIVEK"
-          />
+          <Link
+            href={"/contact"}
+            className="inline-flex lg:w-fit w-full group px-11 cursor-pointer bg-white rounded-sm transition-all duration-500 hover:bg-gradient-to-r from-custom-red via-black to-custom-red py-3 justify-center items-center gap-3"
+          >
+            <span className="text-xl group-hover:text-white text-custom-red font-extrabold leading-normal">
+              SAY Hii to VIVEK
+            </span>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="group-hover:translate-x-2 transition-all duration-300 group-hover:fill-white"
+            >
+              <path
+                d="M12 13H4V11H12V4L20 12L12 20V13Z"
+                fill="#E1181F"
+                className="transition-all duration-300 group-hover:fill-white"
+              />
+            </svg>
+          </Link>
         </div>
       </div>
     </div>

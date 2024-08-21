@@ -20,7 +20,7 @@ const Layout = ({ children }: any) => {
       exit="exit"
       variants={variants}
       transition={{ type: "linear" }}
-      className="bg-black text-white max-w-[1700px] mx-auto"
+      className="bg-black text-white max-w-[1700px] mx-auto overflow-hidden"
     >
       <Header />
       {children}
