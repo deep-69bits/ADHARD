@@ -54,7 +54,7 @@ const SVG2 = () => {
 
 const BannerSection = () => {
   return (
-    <div className="bg-gradient-to-b w-full flex lg:flex-row flex-col my-10 lg:gap-10 gap-2 py-20 from-black via-black to-custom-red lg:px-20 px-4">
+    <div className="bg-gradient-to-b w-full flex lg:flex-row flex-col my-10 lg:gap-10 gap-2 lg:py-20 py-10 from-black via-black to-custom-red lg:px-20 px-4">
       <div className="w-[350px]">
         <TextGradient className="text-5xl font-semibold">
           What we do

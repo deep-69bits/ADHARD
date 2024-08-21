@@ -125,7 +125,7 @@ const ServiceSection = () => {
           </svg>
         </div>
       </div>
-      <div className="grid mt-32 grid-flow-row lg:grid-cols-2 grid-cols-1 gap-20">
+      <div className="grid lg:mt-32 mt-10 grid-flow-row lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
         {Services.map((item, index) => {
           return <ServiceCard item={item} key={index} />;
         })}

@@ -104,7 +104,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
   return (
     <div>
-      <div className="text-custom-red uppercase lg:text-xl text-lg mt-40">
+      <div className="text-custom-red uppercase lg:text-xl text-lg lg:mt-40 mt-10">
         {item.subTitle}
       </div>
       <div className="uppercase font-semibold lg:text-8xl text-5xl pt-2">

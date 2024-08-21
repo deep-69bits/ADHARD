@@ -96,7 +96,7 @@ const ProcessCard = ({ item }: any) => {
 
 const ProcessSection = () => {
   return (
-    <div className="lg:px-20 px-4 py-32 flex lg:gap-0 gap-10 lg:flex-row flex-col">
+    <div className="lg:px-20 px-4 lg:py-32 py-10 flex lg:gap-0 gap-10 lg:flex-row flex-col">
       <div className="flex lg:w-[45%] w-full flex-col gap-2">
         <TextGradient className="text-4xl font-semibold">Our</TextGradient>
         <div className="text-6xl font-semibold">Process</div>

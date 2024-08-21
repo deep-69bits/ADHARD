@@ -99,7 +99,7 @@ const ProcessSection = () => {
     <div className="lg:px-20 px-4 py-32 flex gradient gap-20 flex-col">
       <div className="flex lg:w-[45%] w-full flex-col gap-10">
         <div className="uppercase text-xl">Our Solution Proccess</div>
-        <div className="font-semibold text-6xl leading-[4.5rem]">
+        <div className="font-semibold lg:text-6xl text-5xl leading-[4.5rem]">
           Development, growth and achievements inspire us to do quality work.
         </div>
       </div>

@@ -105,7 +105,7 @@ const Header = () => {
               <Link href={"/"}>INSTAGRAM</Link>
             </div>
           </div>
-          <div className="h-screen w-full py-10 flex lg:hidden flex-col gap-12 items-center lg:px-20 px-4 gradient">
+          <div className="h-screen w-full py-10 flex lg:hidden flex-col gap-10 items-center lg:px-20 px-4 gradient">
             {NavLinks.map((item, index) => {
               return (
                 <Link
@@ -114,7 +114,7 @@ const Header = () => {
                     setOpen(!open);
                   }}
                   href={item.link}
-                  className="text-6xl font-semibold"
+                  className="text-5xl font-semibold"
                 >
                   {item.name}
                 </Link>
