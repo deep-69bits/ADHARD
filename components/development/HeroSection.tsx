@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="w-full flex flex-col gap-8">
           <h1 className="font-semibold lg:text-9xl text-6xl flex lg:flex-row flex-col gap-2">
             <span>
-              AD<span className="text-custom-red">Hard </span>{" "}
+              ADHard
             </span>
             <span className="flex">
               Devel{" "}
