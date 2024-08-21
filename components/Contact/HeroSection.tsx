@@ -16,8 +16,8 @@ const Label: React.FC<LabelProps> = ({ children }) => {
 const Icon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const HeroSection = () => {
   return (
     <div className="w-full h-full gradient lg:py-40 py-20  flex lg:flex-row bg-blue-200 flex-col lg:px-20 px-4 justify-center  gap-4">
       <div className="flex lg:flex-row flex-col w-full items-end lg:gap-40 gap-5">
-        <div className="w-full flex flex-col gap-8">
+        <div className="w-full flex flex-col gap-8 ">
           <h1 className="font-semibold lg:text-9xl text-6xl">Write to Us</h1>
           <h4 className="text-2xl lg:w-1/2 leading-normal">
             Ready to get started? Write, call, point a finger - and we'll get
@@ -43,11 +43,11 @@ const HeroSection = () => {
           <div className="flex lg:flex-row w-full flex-col items-start gap-5">
             <div
               className={
-                "inline-flex px-9 cursor-pointer py-3 justify-center rounded-sm bg-gradient-to-r from-custom-red via-black to-custom-red items-center gap-2"
+                "flex w-full lg:w-fit px-8 cursor-pointer py-3 justify-center rounded-sm bg-gradient-to-r from-custom-red via-black to-custom-red items-center gap-2"
               }
             >
               <Icon />
-              <span className="text-lg w-full font-extrabold leading-normal">
+              <span className="lg:text-lg text-base  w-full font-extrabold leading-normal">
                 We follow back in next 12 hours
               </span>
             </div>
