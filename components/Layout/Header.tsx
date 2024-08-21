@@ -98,6 +98,12 @@ const Header = () => {
                 </Link>
               );
             })}
+            <div className="flex uppercase gap-5 text-xl">
+              <Link href={"/"}>LINKEDIN</Link>
+              <Link href={"/"}>FACEBOOK</Link>
+              <Link href={"/"}>TWITTER</Link>
+              <Link href={"/"}>INSTAGRAM</Link>
+            </div>
           </div>
           <div className="h-screen w-full py-10 flex lg:hidden flex-col gap-12 items-center lg:px-20 px-4 gradient">
             {NavLinks.map((item, index) => {
@@ -114,6 +120,12 @@ const Header = () => {
                 </Link>
               );
             })}
+            <div className="flex uppercase gap-4 text-sm">
+              <Link href={"/"}>LINKEDIN</Link>
+              <Link href={"/"}>FACEBOOK</Link>
+              <Link href={"/"}>TWITTER</Link>
+              <Link href={"/"}>INSTAGRAM</Link>
+            </div>
             <button
               onClick={() => {
                 setOpen(!open);
