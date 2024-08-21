@@ -4,7 +4,7 @@ import SecondaryButton from "@/components/Button/SecondaryButton";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-full gradient py-20 flex flex-col  lg:px-20 px-4 justify-center ">
+    <div className="w-full h-full gradient lg:py-40 py-20 flex flex-col  lg:px-20 px-4 justify-center ">
       <div className="flex flex-row items-center gap-40 ">
         <div className="w-full flex flex-col gap-8">
           <h1 className="font-semibold lg:text-9xl text-6xl">ADHard Digital</h1>

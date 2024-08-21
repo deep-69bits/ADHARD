@@ -32,7 +32,7 @@ const Icon = () => {
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-full gradient py-20 flex lg:flex-row bg-blue-200 flex-col lg:px-20 px-4 justify-center  gap-4">
+    <div className="w-full h-full gradient lg:py-40 py-20  flex lg:flex-row bg-blue-200 flex-col lg:px-20 px-4 justify-center  gap-4">
       <div className="flex lg:flex-row flex-col w-full items-end lg:gap-40 gap-5">
         <div className="w-full flex flex-col gap-8">
           <h1 className="font-semibold lg:text-9xl text-6xl">Write to Us</h1>

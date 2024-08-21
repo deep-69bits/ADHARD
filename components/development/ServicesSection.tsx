@@ -104,7 +104,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
   return (
     <div>
-      <div className="text-custom-red uppercase lg:text-xl text-lg mt-28">
+      <div className="text-custom-red uppercase lg:text-xl text-lg mt-40">
         {item.subTitle}
       </div>
       <div className="uppercase font-semibold lg:text-8xl text-5xl pt-2">
@@ -182,6 +182,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
           </div>
         )}
       </div>
+      <svg
+        width="4"
+        className=" mx-auto mt-10 h-40 lg:hidden block"
+        viewBox="0 0 4 506"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M2 0L1.99998 506" stroke="white" strokeWidth="3" />
+      </svg>
     </div>
   );
 };

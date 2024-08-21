@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import { useEffect, useState } from "react";
 import CTASection from "@/components/CTASection";
 import ApproachSection from "@/components/ApproachSection";
 import ClientsSection from "@/components/Home/ClientsSection";
