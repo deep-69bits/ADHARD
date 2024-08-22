@@ -13,10 +13,10 @@ const Layout = ({ children }: any) => {
     enter: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: -200 },
   };
-  useEffect(() => {
-    // Initialize the cursor effect with red and black emojis
-    new emojiCursor({ emoji: ["🔴", "⚫", "❤️", "🖤"] });
-  }, []);
+  // useEffect(() => {
+  //   // Initialize the cursor effect with red and black emojis
+  //   new emojiCursor({ emoji: ["🔴", "⚫", "❤️", "🖤"] });
+  // }, []);
   return (
     <motion.div
       key={pathname}
@@ -25,7 +25,7 @@ const Layout = ({ children }: any) => {
       exit="exit"
       variants={variants}
       transition={{ type: "linear" }}
-      className="bg-black text-white max-w-[1700px] mx-auto overflow-hidden"
+      className="bg-black text-white max-w-[1700px] mx-auto overflow-hidden selection:bg-black selection:text-white"
     >
       <Header />
       {children}
