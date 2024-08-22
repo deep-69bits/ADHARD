@@ -1,6 +1,5 @@
 import React from "react";
 import TextGradient from "../Text/TextGradient";
-import PrimaryButton from "../Button/PrimaryButton";
 import Image from "next/image";
 
 const ServiceCard = ({ item }: any) => {
