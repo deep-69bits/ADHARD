@@ -33,21 +33,25 @@ const Header = () => {
         }
       >
         {}
-        <Image
-          src={"/Logo.svg"}
-          alt="ADHARD_LOGO"
-          height={100}
-          width={100}
-          className="lg:block hidden"
-        />
-        <div>
+        <Link href={"/"}>
           <Image
-            src={"/Header_logo2.svg"}
+            src={"/Logo.svg"}
             alt="ADHARD_LOGO"
             height={100}
             width={100}
-            className="lg:hidden w-full block"
+            className="lg:block hidden"
           />
+        </Link>
+        <div>
+          <Link  href={'/'}>
+            <Image
+              src={"/Header_logo2.svg"}
+              alt="ADHARD_LOGO"
+              height={100}
+              width={100}
+              className="lg:hidden w-full block"
+            />
+          </Link>
           <hr className="mt-2 h-1  lg:hidden w-full block" />
         </div>
         <div className="flex w-full lg:w-fit justify-between items-center gap-4">

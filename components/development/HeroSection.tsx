@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="w-full h-full gradient lg:py-40 py-20 flex flex-col  lg:px-20 px-4 justify-center ">
       <div className="flex flex-row items-center gap-40 ">
         <div className="w-full flex flex-col gap-8">
-          <h1 className="font-semibold lg:text-9xl text-6xl flex lg:flex-row flex-col gap-2">
+          <h1 className="font-semibold lg:text-9xl text-5xl flex lg:flex-row flex-col gap-2">
             <span>
               ADHard
             </span>
@@ -17,7 +17,7 @@ const HeroSection = () => {
                 src="https://lottie.host/f49e5088-3844-4817-a0fd-ad345bc09ec0/Q219pHIaKX.json"
                 background="transparent"
                 speed="1"
-                style={{ width: "150px", minWidth: "50px" }}
+                style={{ width: "150px", minWidth: "40px" }}
                 loop
                 autoplay
               ></dotlottie-player>

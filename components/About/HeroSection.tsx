@@ -63,8 +63,8 @@ const HeroSection = () => {
         <TextGradient className="text-4xl translate-y-0 font-semibold">
           Our
         </TextGradient>
-        <div className="flex flex-col lg:flex-row  items-center">
-          <div className="lg:w-[400px] gap-4 text-3xl font-semibold">
+        <div className="flex flex-col lg:flex-row  lg:items-center items-start">
+          <div className="lg:w-[400px] gap-4 text-3xl text-left font-semibold">
             20+ Trusted Partners
           </div>
           <div className="image-loop">
